@@ -1,0 +1,29 @@
+.route--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header-nav {
+	float:right;
+}
+.header {
+	height: 60px;
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid #e3e4e5;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	-webkit-transition: right 0.5s, -webkit-transform 0.25s;
+	-moz-transition: right 0.5s, -moz-transform 0.25s;
+	-o-transition: right 0.5s, -o-transform 0.25s;
+	transition: right 0.5s, transform 0.25s;
+}
+.app-bar-login {
+	padding: 0 0.5em;
+	height: 60px;
+	border-bottom: 1px solid rgb(0, 188, 212);
+}
+.home-logo {
+	margin: 0 1em;
+}
