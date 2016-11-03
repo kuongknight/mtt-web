@@ -24,7 +24,7 @@ export default class Header extends React.Component {
 
         <div className='header-nav' style={this.state.openDrawer? style : null} >
           <IndexLink to='/' className='home-logo'>
-           <FontIcon className="material-icons font-icon-logo" >home</FontIcon>
+           <FontIcon className="material-icons big-fonticon" >home</FontIcon>
           </IndexLink>
           <div className='sites-nav'>
             <nav className="banner-section hidden-phone" >

@@ -34,8 +34,9 @@ export default class DrawerMenu extends React.Component {
             ? <IconButton
                 tooltip="Menu"
                 onTouchTap={this.handleToggle}
+                style={{paddingLeft: 0}}
               >
-                <FontIcon className="material-icons" style={iconStyles}>menu</FontIcon>
+                <FontIcon className="material-icons medium-fonticon" style={iconStyles}>menu</FontIcon>
               </IconButton>
             : null
         }
