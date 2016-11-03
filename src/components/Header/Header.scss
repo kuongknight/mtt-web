@@ -2,22 +2,23 @@
   font-weight: bold;
   text-decoration: underline;
 }
-.header-nav {
+.header-drawer {
 	float:right;
+	z-index: 101;
 }
-.header {
+.header-nav {
 	height: 60px;
+	padding-right: 56px;
 	background: rgba(255, 255, 255, 0.8);
 	border-bottom: 1px solid #e3e4e5;
 	position: fixed;
 	right: 0;
 	top: 0;
 	width: 100%;
-	z-index: 100;
 	-webkit-transition: right 0.5s, -webkit-transform 0.25s;
 	-moz-transition: right 0.5s, -moz-transform 0.25s;
 	-o-transition: right 0.5s, -o-transform 0.25s;
-	transition: right 0.5s, transform 0.25s;
+	transition: right 0.3s, transform 0.25s;
 }
 .app-bar-login {
 	padding: 0 0.5em;
@@ -25,5 +26,40 @@
 	border-bottom: 1px solid rgb(0, 188, 212);
 }
 .home-logo {
-	margin: 0 1em;
+	margin: 0 1.5em;
+	display: inline-block;
+}
+.font-icon-logo {
+	font-size:48px !important;
+}
+.sites-nav {
+	float:right;
+	.block-container {
+		padding: 1em;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    -webkit-flex-wrap: wrap;
+	    -moz-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: flex;
+	    display: -ms-flexbox;
+	}
+	.nav-item {
+		font-weight: 500;
+    	list-style: none;
+    	line-height: 30px;
+    	display: list-item;
+    	text-align: -webkit-match-parent;
+    	a {
+    		text-decoration: none;
+    		color: #4c4c4e;
+    		padding: 0.75em 1em;
+    	}
+	}
 }

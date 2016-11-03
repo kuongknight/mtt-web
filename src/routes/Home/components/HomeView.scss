@@ -1,5 +1,17 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+.home-banner {
+	background-color: #f1f5f7;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 1200px;
+    -ms-transition: background-image .5s ease-in-out;
+    -moz-transition: background-image .5s ease-in-out;
+    -webkit-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out;
 }
+.banner-1 {
+	background-image: url("http://localhost:3000/images/team_hero.jpg");
+}
+

@@ -5,6 +5,11 @@ import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
 import ClickOutside from '../Utils/ClickOutside'
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import {red500, yellow500, blue500} from 'material-ui/styles/colors';
+
+const iconStyles = {
+    marginLeft: 24,
+};
 
 export default class DrawerMenu extends React.Component {
 
@@ -30,11 +35,11 @@ export default class DrawerMenu extends React.Component {
                 tooltip="Menu"
                 onTouchTap={this.handleToggle}
               >
-                <FontIcon className="material-icons" >menu</FontIcon>
+                <FontIcon className="material-icons" style={iconStyles}>menu</FontIcon>
               </IconButton>
             : null
         }
-        <Drawer width={350}
+        <Drawer width={300}
                 openSecondary={true} 
                 open={this.state.open}
         >
