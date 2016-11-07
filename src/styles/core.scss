@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font: 300 16px/1.5 source-sans-pro, Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -24,4 +25,53 @@ body {
 }
 .big-fonticon {
 	font-size:48px !important;
+}
+.block-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	display: -ms-flexbox;
+}
+.no-padding {
+	padding: 0;
+}
+.no-margin {
+	margin: 0;
+}
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: 			translateY(-50%);
+}
+.font-weight-lighter {
+	font-weight: 200;
+}
+.font-weight-regular {
+	font-weight: 400;
+}
+.font-weight-bold {
+	font-weight: 600;
+}
+.justify-space-between {
+	-webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
+.justify-center {
+	 -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
 }

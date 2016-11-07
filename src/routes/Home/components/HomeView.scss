@@ -14,4 +14,34 @@
 .banner-1 {
 	background-image: url("http://localhost:3000/images/team_hero.jpg");
 }
+.banner-text{
+    padding : 14em 12em;
+    color : #4c4c4e;
+    @media screen 
+          and (device-width: 360px) 
+          and (device-height: 640px) {
+          padding : 7em 6em;
+          h1 {
+                font-size : 2em;
+                line-height: 1.2;
+            }
+    }
+    h1 {
+        font-size : 3em;
+        line-height: 1.4;
+    }
+}
+.ceo-detail {
+    width: 20%;
+    bottom: 10%;
+    position: absolute;
+    right: 0;
+    .detail-content {
+        padding: 1em;
+    }
+    span {
+        display:block;
+        line-height: 1.5em;
+    }
+}
 

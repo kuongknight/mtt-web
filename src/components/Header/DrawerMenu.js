@@ -3,6 +3,7 @@ import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import FontIcon from 'material-ui/FontIcon';
+import MenuItem from 'material-ui/MenuItem';
 import ClickOutside from '../Utils/ClickOutside'
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import {red500, yellow500, blue500} from 'material-ui/styles/colors';
@@ -51,6 +52,8 @@ export default class DrawerMenu extends React.Component {
               iconElementRight={<IconButton><NavigationClose /></IconButton>}
               showMenuIconButton={false}
           />
+          <MenuItem onTouchTap={this.handleClose}>Menu Item</MenuItem>
+          <MenuItem onTouchTap={this.handleClose}>Menu Item 2</MenuItem>
         </Drawer>
       </ClickOutside>
     );

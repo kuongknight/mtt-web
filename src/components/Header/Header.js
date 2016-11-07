@@ -26,17 +26,8 @@ export default class Header extends React.Component {
           <IndexLink to='/' className='home-logo'>
            <FontIcon className="material-icons big-fonticon" >home</FontIcon>
           </IndexLink>
-          <div className='sites-nav'>
-            <nav className="banner-section hidden-phone" >
-               <ul className="block-container no-padding" >
-                  <li className="nav-item" > <a href="/product" > <span>Product</span> </a> </li>
-                  <li className="nav-item" > <a href="/solutions" > <span>Solutions</span> </a> </li>
-                  <li className="nav-item" > <a href="/resources" > <span>Resources</span> </a> </li>
-                  <li className="nav-item" > <a href="/services" > <span>Services</span> </a> </li>
-                  <li className="nav-item" > <a href="/company" > <span>Company</span> </a> </li>
-               </ul>
-            </nav>
-          </div>
+
+          <NavMenu />
         </div>
 
         <div className='header-drawer'>

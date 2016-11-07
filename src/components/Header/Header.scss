@@ -5,6 +5,9 @@
 .header-drawer {
 	float:right;
 	z-index: 101;
+	[type=button] {
+		-webkit-appearance: inherit;
+	}
 }
 .header-nav {
 	height: 60px;
@@ -31,24 +34,9 @@
 }
 .sites-nav {
 	float:right;
-	.block-container {
-		padding: 1em;
-	    -webkit-box-sizing: border-box;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
-	    -webkit-flex-wrap: wrap;
-	    -moz-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	    display: -webkit-box;
-	    display: -moz-box;
-	    display: -webkit-flex;
-	    display: -moz-flex;
-	    display: flex;
-	    display: -ms-flexbox;
-	}
 	.nav-item {
 		font-weight: 500;
+		font-size: 1em;
     	list-style: none;
     	line-height: 30px;
     	display: list-item;
@@ -57,6 +45,9 @@
     		text-decoration: none;
     		color: #4c4c4e;
     		padding: 0.75em 1em;
+    	}
+    	:hover {
+    		color: #1c75b9;
     	}
 	}
 }
