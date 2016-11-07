@@ -13,6 +13,8 @@ body {
   padding: 0;
   height: 100%;
   font: 300 16px/1.5 source-sans-pro, Arial, Helvetica, sans-serif;
+  transition: all 0.3s, transform 0.25s;
+  position: relative;
 }
 
 *,
@@ -74,4 +76,18 @@ body {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
+}
+@media (max-width: 767px) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
 }

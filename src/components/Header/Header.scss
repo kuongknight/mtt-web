@@ -3,8 +3,9 @@
   text-decoration: underline;
 }
 .header-drawer {
-	float:right;
 	z-index: 101;
+	position: fixed;
+    right: 0;
 	[type=button] {
 		-webkit-appearance: inherit;
 	}
@@ -12,11 +13,12 @@
 .header-nav {
 	height: 60px;
 	padding-right: 56px;
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.9);
 	border-bottom: 1px solid #e3e4e5;
 	position: fixed;
 	right: 0;
 	top: 0;
+	z-index: 100;
 	width: 100%;
 	-webkit-transition: right 0.5s, -webkit-transform 0.25s;
 	-moz-transition: right 0.5s, -moz-transform 0.25s;
