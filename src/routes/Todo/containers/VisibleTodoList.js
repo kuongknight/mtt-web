@@ -19,7 +19,7 @@ const mapStateToProps = (state) => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
 })
 
-const mapDispatchToProps =  ({
+const mapDispatchToProps = ({
   onTodoClick: toggleTodo
 })
 
