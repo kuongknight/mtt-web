@@ -6,10 +6,10 @@ export const COUNTER_INCREMENT = 'COUNTER_INCREMENT'
 // ------------------------------------
 // Actions
 // ------------------------------------
-export function increment (value = 1) {
+export const increment = (value = 1) => {
   return {
-    type    : COUNTER_INCREMENT,
-    payload : value
+    type: COUNTER_INCREMENT,
+    payload: value
   }
 }
 
@@ -41,7 +41,7 @@ export const actions = {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [COUNTER_INCREMENT] : (state, action) => state + action.payload
+  [COUNTER_INCREMENT]: (state, action) => state + action.payload
 }
 
 // ------------------------------------
