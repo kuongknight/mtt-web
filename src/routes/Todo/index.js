@@ -20,7 +20,7 @@ export default (store) => ({
       /*  Webpack - use require callback to define
           dependencies for bundling   */
       const reducer = require('./modules/todos').default
-      injectReducer(store, { key: 'todo', reducer })
+      injectReducer(store, { key: 'todoApp', reducer })
 
       /*  Return getComponent   */
       cb(null, AppTodo)
