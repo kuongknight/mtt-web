@@ -19,10 +19,8 @@ export default (store) => ({
     require.ensure([], (require) => {
       /*  Webpack - use require callback to define
           dependencies for bundling   */
-      const reducer = require('./modules/counter').default
-
-      /*  Add the reducer to the store on key 'counter'  */
-      injectReducer(store, { key: 'counter', reducer })
+      const reducer = require('./modules/todos').default
+      injectReducer(store, { key: 'todo', reducer })
 
       /*  Return getComponent   */
       cb(null, AppTodo)
